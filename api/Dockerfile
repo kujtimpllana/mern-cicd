@@ -2,11 +2,7 @@ FROM node:18-alpine
 
 WORKDIR /usr/src/app
 
-RUN npm uninstall -g cross-spawn && npm cache clean --force && \
-npm install -g cross-spawn@7.0.5 --force
-
-RUN npm uninstall -g glob && npm cache clean --force && \
-npm install -g glob@11.1.0 --force
+RUN npm install -g npm@10.9.1
 
 COPY package*.json .
 
