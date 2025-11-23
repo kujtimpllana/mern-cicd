@@ -6,7 +6,9 @@ RUN npm install -g npm@11.6.2
 
 COPY package-lock.json package.json ./
 
-RUN npm install --production && npm install glob@11.1.0
+RUN npm install glob@11.1.0
+
+RUN npm install --production
 
 COPY . . 
 
