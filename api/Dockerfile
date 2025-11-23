@@ -3,7 +3,6 @@ FROM node:18-alpine
 WORKDIR /usr/src/app
 
 RUN npm install -g npm@10.9.1
-RUN npm update glob
 
 COPY package*.json .
 
