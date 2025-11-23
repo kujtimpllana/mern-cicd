@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: kujtimpllana/mern-frontend:latest
+          image: kujtimpllana/mern-frontend
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
