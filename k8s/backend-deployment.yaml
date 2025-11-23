@@ -46,7 +46,7 @@ spec:
                   key: DB_NAME
 
 ---
-apiVersion: apps/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: backend-service
